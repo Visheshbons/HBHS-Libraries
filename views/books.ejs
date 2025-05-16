@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books | HBHS Libraries</title>
+</head>
+<body>
+    <main>
+        <h1>All Books</h1>
+        <hr>
+        <div class="book-list">
+            <% for (i = 0; i < books.length; i++) { %>
+                <article>
+                    <h3><%= books.title %></h3>
+                    <p><strong>Author:</strong> <%= books.author %></p>
+                    <p><strong>Published:</strong> <%= books.publishedDate %></p>
+                    <p><strong>ISBN:</strong> <%= books.isbn %></p>
+                </article>
+            <% } %>
+        </div>
+    </main>
+</body>
+</html>

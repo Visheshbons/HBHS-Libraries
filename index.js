@@ -45,6 +45,39 @@ app.get('/', (req, res) => {
     });
 });
 
+app.get('/books', (req, res) => {
+    statusCode(req, res, 501);
+});
+
+app.get('/bookDev', (req, res) => {
+    res.render('bookDev.ejs', {
+        books: [
+            {
+                title: 'The Great Gatsby',
+                author: 'F. Scott Fitzgerald',
+                publishedDate: '1925',
+                isbn: '9780743273565',
+            }
+        ]
+    });
+});
+
+app.get('/issue', (req, res) => {
+    statusCode(req, res, 501);
+});
+
+app.get('/issueDev', (req, res) => {
+    res.send('Issue page is under development.');
+});
+
+app.get('/return', (req, res) => {
+    statusCode(req, res, 501);
+});
+
+app.get('/returnDev', (req, res) => {
+    res.send('Return page is under development.');
+});
+
 app.get('/teapot', (req, res) => {
     statusCode(req, res, 418);
 });

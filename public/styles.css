@@ -1,6 +1,7 @@
 /* General styles */
 body {
     font-family: Arial, sans-serif;
+    text-align: center;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -56,8 +57,17 @@ main {
     padding: 20px;
     background: #fff;
     margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+article {
+    padding: 20px;
+    background: #fff;
+    margin: 20px auto;
     max-width: 800px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
 }
 

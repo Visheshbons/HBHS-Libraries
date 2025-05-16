@@ -1,5 +1,26 @@
 import chalk from 'chalk';
 
+const experimentalPages = {
+    '/books': '/bookDev',
+    '/issue': '/issueDev',
+    '/return': '/returnDev',
+};
+
+const errData = {
+    ERR404: {
+        err: 'ERR_404',
+        title: 'Page Not Found',
+        description: 'The page you are looking for does not exist.',
+        is501: false,
+    },
+    ERR501: {
+        err: 'ERR_501',
+        title: 'Not Implemented',
+        description: 'The page you are looking for is not implemented yet.',
+        is501: true,
+    },
+};
+
 function statusCode(req, res, code) {
     switch (code) {
         // 1xx Informational
@@ -91,7 +112,9 @@ function statusCode(req, res, code) {
             console.warn(`${chalk.red('ERR_403')}: the page ${req.path} is forbidden.`);
             break;
         case 404:
-            res.status(404).send('<pre>ERR_404_NOT_FOUND</pre>');
+            res.status(404).render('err.ejs', {
+                ...errData.ERR404,
+            });
             console.warn(`${chalk.red('ERR_404')}: the page ${req.path} was not found.`);
             break;
         case 405:
@@ -132,7 +155,10 @@ function statusCode(req, res, code) {
             console.error(`${chalk.magenta('ERR_500')}: internal server error at ${req.path}.`);
             break;
         case 501:
-            res.status(501).send('<pre>ERR_501_NOT_IMPLEMENTED</pre>');
+            res.status(501).render('err.ejs', {
+                ...errData.ERR501,
+                devLink: experimentalPages[req.path] || null,
+            });
             console.error(`${chalk.magenta('ERR_501')}: the page ${req.path} is not implemented.`);
             break;
         case 502:
