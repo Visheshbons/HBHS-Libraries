@@ -5,77 +5,77 @@ function statusCode(req, res, code) {
         // 1xx Informational
         case 100:
             res.status(100);
-            console.info(`${chalk.blue('INFO_100')}: the page ${req.path} received a continue response.`);
+            console.info(`${chalk.blue('100')}: the page ${req.path} received a continue response.`);
             break;
         case 101:
             res.status(101);
-            console.info(`${chalk.blue('INFO_101')}: the page ${req.path} is switching protocols.`);
+            console.info(`${chalk.blue('101')}: the page ${req.path} is switching protocols.`);
             break;
         case 102:
             res.status(102);
-            console.info(`${chalk.blue('INFO_102')}: the page ${req.path} is processing.`);
+            console.info(`${chalk.blue('102')}: the page ${req.path} is processing.`);
             break;
         case 103:
             res.status(103);
-            console.info(`${chalk.blue('INFO_103')}: the page ${req.path} received early hints.`);
+            console.info(`${chalk.blue('103')}: the page ${req.path} received early hints.`);
             break;
         // 2xx Success
         case 200:
             res.status(200);
-            console.log(`${chalk.green('SUCCESS_200')}: the page ${req.path} was OK.`);
+            console.log(`${chalk.green('200')}: the page ${req.path} was OK.`);
             break;
         case 201:
             res.status(201);
-            console.log(`${chalk.green('SUCCESS_201')}: the page ${req.path} was created.`);
+            console.log(`${chalk.green('201')}: the page ${req.path} was created.`);
             break;
         case 202:
             res.status(202);
-            console.log(`${chalk.green('SUCCESS_202')}: the page ${req.path} was accepted.`);
+            console.log(`${chalk.green('202')}: the page ${req.path} was accepted.`);
             break;
         case 203:
             res.status(203);
-            console.log(`${chalk.green('SUCCESS_203')}: the page ${req.path} returned non-authoritative information.`);
+            console.log(`${chalk.green('203')}: the page ${req.path} returned non-authoritative information.`);
             break;
         case 204:
             res.status(204);
-            console.log(`${chalk.green('SUCCESS_204')}: the page ${req.path} returned no content.`);
+            console.log(`${chalk.green('204')}: the page ${req.path} returned no content.`);
             break;
         case 205:
             res.status(205);
-            console.log(`${chalk.green('SUCCESS_205')}: the page ${req.path} reset content.`);
+            console.log(`${chalk.green('205')}: the page ${req.path} reset content.`);
             break;
         case 206:
             res.status(206);
-            console.log(`${chalk.green('SUCCESS_206')}: the page ${req.path} returned partial content.`);
+            console.log(`${chalk.green('206')}: the page ${req.path} returned partial content.`);
             break;
         // 3xx Redirection
         case 300:
             res.status(300);
-            console.warn(`${chalk.yellow('REDIRECT_300')}: the page ${req.path} has multiple choices.`);
+            console.warn(`${chalk.yellow('300')}: the page ${req.path} has multiple choices.`);
             break;
         case 301:
             res.status(301);
-            console.warn(`${chalk.yellow('REDIRECT_301')}: the page ${req.path} was moved permanently.`);
+            console.warn(`${chalk.yellow('301')}: the page ${req.path} was moved permanently.`);
             break;
         case 302:
             res.status(302);
-            console.warn(`${chalk.yellow('REDIRECT_302')}: the page ${req.path} was found (redirected).`);
+            console.warn(`${chalk.yellow('302')}: the page ${req.path} was found (redirected).`);
             break;
         case 303:
             res.status(303);
-            console.warn(`${chalk.yellow('REDIRECT_303')}: the page ${req.path} see other.`);
+            console.warn(`${chalk.yellow('303')}: the page ${req.path} see other.`);
             break;
         case 304:
             res.status(304);
-            console.warn(`${chalk.yellow('REDIRECT_304')}: the page ${req.path} was not modified.`);
+            console.warn(`${chalk.yellow('304')}: the page ${req.path} was not modified.`);
             break;
         case 307:
             res.status(307);
-            console.warn(`${chalk.yellow('REDIRECT_307')}: the page ${req.path} was temporarily redirected.`);
+            console.warn(`${chalk.yellow('307')}: the page ${req.path} was temporarily redirected.`);
             break;
         case 308:
             res.status(308);
-            console.warn(`${chalk.yellow('REDIRECT_308')}: the page ${req.path} was permanently redirected.`);
+            console.warn(`${chalk.yellow('308')}: the page ${req.path} was permanently redirected.`);
             break;
         // 4xx Client Error
         case 400:
