@@ -8,42 +8,12 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(express.static('public'));
+app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
     statusCode(req, res, 200);
     res.render('index.ejs', {
-        books: [
-            {
-                title: 'The Great Gatsby',
-                author: 'F. Scott Fitzgerald',
-                publishedDate: '1925',
-                isbn: '9780743273565',
-            },
-            {
-                title: 'To Kill a Mockingbird',
-                author: 'Harper Lee',
-                publishedDate: '1960',
-                isbn: '9780061120084',
-            },
-            {
-                title: '1984',
-                author: 'George Orwell',
-                publishedDate: '1949',
-                isbn: '9780451524935',
-            },
-            {
-                title: 'Pride and Prejudice',
-                author: 'Jane Austen',
-                publishedDate: '1813',
-                isbn: '9780141439518',
-            },
-            {
-                title: 'FT: The Full Story',
-                author: 'Vishesh Kudva',
-                publishedDate: '2035',
-                isbn: '9780000000000',
-            },
-        ],
+        books: books,
     });
 });
 
@@ -52,6 +22,7 @@ app.get('/books', (req, res) => {
 });
 
 app.get('/bookDev', (req, res) => {
+    statusCode(req, res, 200);
     res.render('books.ejs', {
         books: books
     });
@@ -62,7 +33,12 @@ app.get('/issue', (req, res) => {
 });
 
 app.get('/issueDev', (req, res) => {
-    res.send('Issue page is under development.');
+    statusCode(req, res, 200);
+    res.render('issue.ejs');
+});
+
+app.post('/issue', (req, res) => {
+    statusCode(req, res, 501, true);
 });
 
 app.get('/return', (req, res) => {
@@ -70,7 +46,7 @@ app.get('/return', (req, res) => {
 });
 
 app.get('/returnDev', (req, res) => {
-    res.send('Return page is under development.');
+    statusCode(req, res, 501, true);
 });
 
 app.get('/teapot', (req, res) => {

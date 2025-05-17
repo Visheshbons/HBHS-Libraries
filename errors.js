@@ -21,7 +21,7 @@ const errData = {
     },
 };
 
-function statusCode(req, res, code) {
+function statusCode(req, res, code, forced = false) {
     switch (code) {
         // 1xx Informational
         case 100:
@@ -112,9 +112,13 @@ function statusCode(req, res, code) {
             console.warn(`${chalk.red('ERR_403')}: the page ${req.path} is forbidden.`);
             break;
         case 404:
-            res.status(404).render('err.ejs', {
-                ...errData.ERR404,
-            });
+            if (!forced) {
+                res.status(404).render('err.ejs', {
+                    ...errData.ERR404,
+                });
+            } else {
+                res.status(404).send('<pre>ERR_404_NOT_FOUND</pre>');
+            };
             console.warn(`${chalk.red('ERR_404')}: the page ${req.path} was not found.`);
             break;
         case 405:
@@ -155,10 +159,14 @@ function statusCode(req, res, code) {
             console.error(`${chalk.magenta('ERR_500')}: internal server error at ${req.path}.`);
             break;
         case 501:
-            res.status(501).render('err.ejs', {
-                ...errData.ERR501,
-                devLink: experimentalPages[req.path] || null,
-            });
+            if (!forced) {
+                res.status(501).render('err.ejs', {
+                    ...errData.ERR501,
+                    devLink: experimentalPages[req.path] || null,
+                });
+            } else {
+                res.status(501).send('<pre>ERR_501_NOT_IMPLEMENTED</pre>');
+            };
             console.error(`${chalk.magenta('ERR_501')}: the page ${req.path} is not implemented.`);
             break;
         case 502:

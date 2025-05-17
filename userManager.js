@@ -14,14 +14,14 @@ class User {
         this.books = [];
     }
 
-    addBook(book) {
+    static addBook(book) {
         this.books.push(book);
         statusCode(202);
         console.log(`${chalk.grey(this.name)} borrowed ${chalk.green(book.title)}`);
         User.pushUsersFromJSON();
     }
 
-    removeBook(book) {
+    static removeBook(book) {
         const index = this.books.indexOf(book);
         if (index > -1) {
             this.books.splice(index, 1);
