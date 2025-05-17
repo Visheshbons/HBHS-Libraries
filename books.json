@@ -1,212 +1,242 @@
 [
-    {
-        "title": "Sample Book 1",
-        "author": "Author 1",
-        "publishedDate": "2023-01-01",
-        "isbn": "1234567890",
-        "location": "On Loan"
-    },
-    {
-        "title": "Sample Book 2",
-        "author": "Author 2",
-        "publishedDate": "2023-02-01",
-        "isbn": "0987654321",
-        "location": "On Loan"
-    },
-    {
-        "title": "Sample Book 3",
-        "author": "Author 3",
-        "publishedDate": "2023-03-01",
-        "isbn": "1122334455",
-        "location": "On Loan"
-    },
-    {
-        "title": "Sample Book 4",
-        "author": "Author 4",
-        "publishedDate": "2023-04-01",
-        "isbn": "2233445566",
-        "location": "On Loan"
-    },
-    {
-        "title": "Sample Book 5",
-        "author": "Author 5",
-        "publishedDate": "2023-05-01",
-        "isbn": "3344556677",
-        "location": "On Loan"
-    },
-    {
-        "title": "Sample Book 6",
-        "author": "Author 6",
-        "publishedDate": "2023-06-01",
-        "isbn": "4455667788",
-        "location": "On Loan"
-    },
-    {
-        "title": "Sample Book 7",
-        "author": "Author 7",
-        "publishedDate": "2023-07-01",
-        "isbn": "5566778899",
-        "location": "724.65924NAS | Nonfiction"
-    },
-    {
-        "title": "Sample Book 8",
-        "author": "Author 8",
-        "publishedDate": "2023-08-01",
-        "isbn": "6677889900",
-        "location": "276.6563BAL | Nonfiction"
-    },
-    {
-        "title": "Sample Book 9",
-        "author": "Author 9",
-        "publishedDate": "2023-09-01",
-        "isbn": "7788990011",
-        "location": "BAS | Fiction"
-    },
-    {
-        "title": "Sample Book 10",
-        "author": "Author 10",
-        "publishedDate": "2023-10-01",
-        "isbn": "8899001122",
-        "location": "HED | Fiction"
-    },
-    {
-        "title": "Sample Book 11",
-        "author": "Author 11",
-        "publishedDate": "2023-11-01",
-        "isbn": "9900112233",
-        "location": "065.2HAI | Nonfiction"
-    },
-    {
-        "title": "Sample Book 12",
-        "author": "Author 12",
-        "publishedDate": "2023-12-01",
-        "isbn": "1011121314",
-        "location": "BAL | Fiction"
-    },
-    {
-        "title": "Sample Book 13",
-        "author": "Author 13",
-        "publishedDate": "2023-01-15",
-        "isbn": "1213141516",
-        "location": "KUD | Fiction"
-    },
-    {
-        "title": "Sample Book 14",
-        "author": "Author 14",
-        "publishedDate": "2023-02-15",
-        "isbn": "1314151617",
-        "location": "976.32465007KUD | Nonfiction"
-    },
-    {
-        "title": "Sample Book 15",
-        "author": "Author 15",
-        "publishedDate": "2023-03-15",
-        "isbn": "1415161718",
-        "location": "FIC | Fiction"
-    },
-    {
-        "title": "Sample Book 16",
-        "author": "Author 16",
-        "publishedDate": "2023-04-15",
-        "isbn": "1516171819",
-        "location": "123.456ABC | Nonfiction"
-    },
-    {
-        "title": "Sample Book 17",
-        "author": "Author 17",
-        "publishedDate": "2023-05-15",
-        "isbn": "1617181920",
-        "location": "789.012DEF | Nonfiction"
-    },
-    {
-        "title": "Sample Book 18",
-        "author": "Author 18",
-        "publishedDate": "2023-06-15",
-        "isbn": "1718192021",
-        "location": "345.678GHI | Nonfiction"
-    },
-    {
-        "title": "Sample Book 19",
-        "author": "Author 19",
-        "publishedDate": "2023-07-15",
-        "isbn": "1819202122",
-        "location": "JKR | Fiction"
-    },
-    {
-        "title": "Sample Book 20",
-        "author": "Author 20",
-        "publishedDate": "2023-08-15",
-        "isbn": "1920212223",
-        "location": "FAN | Fiction"
-    },
-    {
-        "title": "Sample Book 21",
-        "author": "Author 21",
-        "publishedDate": "2023-09-15",
-        "isbn": "2021222324",
-        "location": "321.4567891234XYZ | Nonfiction"
-    },
-    {
-        "title": "Sample Book 22",
-        "author": "Author 22",
-        "publishedDate": "2023-10-15",
-        "isbn": "2122232425",
-        "location": "HIS | Fiction"
-    },
-    {
-        "title": "Sample Book 23",
-        "author": "Author 23",
-        "publishedDate": "2023-11-15",
-        "isbn": "2223242526",
-        "location": "654.3219876543ABC | Nonfiction"
-    },
-    {
-        "title": "Sample Book 24",
-        "author": "Author 24",
-        "publishedDate": "2023-12-15",
-        "isbn": "2324252627",
-        "location": "MYS | Fiction"
-    },
-    {
-        "title": "Sample Book 25",
-        "author": "Author 25",
-        "publishedDate": "2023-01-30",
-        "isbn": "2425262728",
-        "location": "789.1234567890DEF | Nonfiction"
-    },
-    {
-        "title": "Sample Book 26",
-        "author": "Author 26",
-        "publishedDate": "2023-02-30",
-        "isbn": "2526272829",
-        "location": "ROM | Fiction"
-    },
-    {
-        "title": "Sample Book 27",
-        "author": "Author 27",
-        "publishedDate": "2023-03-30",
-        "isbn": "2627282930",
-        "location": "123.0000000001GHI | Nonfiction"
-    },
-    {
-        "title": "Sample Book 28",
-        "author": "Author 28",
-        "publishedDate": "2023-04-30",
-        "isbn": "2728293031",
-        "location": "SCI | Fiction"
-    },
-    {
-        "title": "Sample Book 29",
-        "author": "Author 29",
-        "publishedDate": "2023-05-30",
-        "isbn": "2829303132",
-        "location": "456.7891234567JKL | Nonfiction"
-    },
-    {
-        "title": "Sample Book 30",
-        "author": "Author 30",
-        "publishedDate": "2023-06-30",
-        "isbn": "2930313233",
-        "location": "ADV | Fiction"
-    }
+  {
+    "title": "Sample Book 1",
+    "author": "Author 1",
+    "publishedDate": "2023-01-01",
+    "isbn": "1234567890",
+    "location": "On Loan",
+    "shelfLocation": "FIC | Fiction"
+  },
+  {
+    "title": "Sample Book 2",
+    "author": "Author 2",
+    "publishedDate": "2023-02-01",
+    "isbn": "0987654321",
+    "location": "On Loan",
+    "shelfLocation": "27.4DIC | Nonfiction"
+  },
+  {
+    "title": "Sample Book 3",
+    "author": "Author 3",
+    "publishedDate": "2023-03-01",
+    "isbn": "1122334455",
+    "location": "On Loan",
+    "shelfLocation": "LIS | Fiction"
+  },
+  {
+    "title": "Sample Book 4",
+    "author": "Author 4",
+    "publishedDate": "2023-04-01",
+    "isbn": "2233445566",
+    "location": "On Loan",
+    "shelfLocation": "56.83652BIO | Nonfiction"
+  },
+  {
+    "title": "Sample Book 5",
+    "author": "Author 5",
+    "publishedDate": "2023-05-01",
+    "isbn": "3344556677",
+    "location": "On Loan",
+    "shelfLocation": "BIO | Fiction"
+  },
+  {
+    "title": "Sample Book 6",
+    "author": "Author 6",
+    "publishedDate": "2023-06-01",
+    "isbn": "4455667788",
+    "location": "On Loan",
+    "shelfLocation": "075ONO | Nonfiction"
+  },
+  {
+    "title": "Sample Book 7",
+    "author": "Author 7",
+    "publishedDate": "2023-07-01",
+    "isbn": "5566778899",
+    "location": "724.65924NAS | Nonfiction",
+    "shelfLocation": "724.65924NAS | Nonfiction"
+  },
+  {
+    "title": "Sample Book 8",
+    "author": "Author 8",
+    "publishedDate": "2023-08-01",
+    "isbn": "6677889900",
+    "location": "276.6563BAL | Nonfiction",
+    "shelfLocation": "276.6563BAL | Nonfiction"
+  },
+  {
+    "title": "Sample Book 9",
+    "author": "Author 9",
+    "publishedDate": "2023-09-01",
+    "isbn": "7788990011",
+    "location": "On Loan",
+    "shelfLocation": "BAS | Fiction"
+  },
+  {
+    "title": "Sample Book 10",
+    "author": "Author 10",
+    "publishedDate": "2023-10-01",
+    "isbn": "8899001122",
+    "location": "HED | Fiction",
+    "shelfLocation": "HED | Fiction"
+  },
+  {
+    "title": "Sample Book 11",
+    "author": "Author 11",
+    "publishedDate": "2023-11-01",
+    "isbn": "9900112233",
+    "location": "065.2HAI | Nonfiction",
+    "shelfLocation": "065.2HAI | Nonfiction"
+  },
+  {
+    "title": "Sample Book 12",
+    "author": "Author 12",
+    "publishedDate": "2023-12-01",
+    "isbn": "1011121314",
+    "location": "BAL | Fiction",
+    "shelfLocation": "BAL | Fiction"
+  },
+  {
+    "title": "Sample Book 13",
+    "author": "Author 13",
+    "publishedDate": "2023-01-15",
+    "isbn": "1213141516",
+    "location": "KUD | Fiction",
+    "shelfLocation": "KUD | Fiction"
+  },
+  {
+    "title": "Sample Book 14",
+    "author": "Author 14",
+    "publishedDate": "2023-02-15",
+    "isbn": "1314151617",
+    "location": "976.32465007KUD | Nonfiction",
+    "shelfLocation": "976.32465007KUD | Nonfiction"
+  },
+  {
+    "title": "Sample Book 15",
+    "author": "Author 15",
+    "publishedDate": "2023-03-15",
+    "isbn": "1415161718",
+    "location": "FIC | Fiction",
+    "shelfLocation": "FIC | Fiction"
+  },
+  {
+    "title": "Sample Book 16",
+    "author": "Author 16",
+    "publishedDate": "2023-04-15",
+    "isbn": "1516171819",
+    "location": "123.456ABC | Nonfiction",
+    "shelfLocation": "123.456ABC | Nonfiction"
+  },
+  {
+    "title": "Sample Book 17",
+    "author": "Author 17",
+    "publishedDate": "2023-05-15",
+    "isbn": "1617181920",
+    "location": "789.012DEF | Nonfiction",
+    "shelfLocation": "789.012DEF | Nonfiction"
+  },
+  {
+    "title": "Sample Book 18",
+    "author": "Author 18",
+    "publishedDate": "2023-06-15",
+    "isbn": "1718192021",
+    "location": "345.678GHI | Nonfiction",
+    "shelfLocation": "345.678GHI | Nonfiction"
+  },
+  {
+    "title": "Sample Book 19",
+    "author": "Author 19",
+    "publishedDate": "2023-07-15",
+    "isbn": "1819202122",
+    "location": "JKR | Fiction",
+    "shelfLocation": "JKR | Fiction"
+  },
+  {
+    "title": "Sample Book 20",
+    "author": "Author 20",
+    "publishedDate": "2023-08-15",
+    "isbn": "1920212223",
+    "location": "FAN | Fiction",
+    "shelfLocation": "FAN | Fiction"
+  },
+  {
+    "title": "Sample Book 21",
+    "author": "Author 21",
+    "publishedDate": "2023-09-15",
+    "isbn": "2021222324",
+    "location": "321.4567891234XYZ | Nonfiction",
+    "shelfLocation": "321.4567891234XYZ | Nonfiction"
+  },
+  {
+    "title": "Sample Book 22",
+    "author": "Author 22",
+    "publishedDate": "2023-10-15",
+    "isbn": "2122232425",
+    "location": "HIS | Fiction",
+    "shelfLocation": "HIS | Fiction"
+  },
+  {
+    "title": "Sample Book 23",
+    "author": "Author 23",
+    "publishedDate": "2023-11-15",
+    "isbn": "2223242526",
+    "location": "654.3219876543ABC | Nonfiction",
+    "shelfLocation": "654.3219876543ABC | Nonfiction"
+  },
+  {
+    "title": "Sample Book 24",
+    "author": "Author 24",
+    "publishedDate": "2023-12-15",
+    "isbn": "2324252627",
+    "location": "MYS | Fiction",
+    "shelfLocation": "MYS | Fiction"
+  },
+  {
+    "title": "Sample Book 25",
+    "author": "Author 25",
+    "publishedDate": "2023-01-30",
+    "isbn": "2425262728",
+    "location": "789.1234567890DEF | Nonfiction",
+    "shelfLocation": "789.1234567890DEF | Nonfiction"
+  },
+  {
+    "title": "Sample Book 26",
+    "author": "Author 26",
+    "publishedDate": "2023-02-30",
+    "isbn": "2526272829",
+    "location": "ROM | Fiction",
+    "shelfLocation": "ROM | Fiction"
+  },
+  {
+    "title": "Sample Book 27",
+    "author": "Author 27",
+    "publishedDate": "2023-03-30",
+    "isbn": "2627282930",
+    "location": "123.0000000001GHI | Nonfiction",
+    "shelfLocation": "123.0000000001GHI | Nonfiction"
+  },
+  {
+    "title": "Sample Book 28",
+    "author": "Author 28",
+    "publishedDate": "2023-04-30",
+    "isbn": "2728293031",
+    "location": "SCI | Fiction",
+    "shelfLocation": "SCI | Fiction"
+  },
+  {
+    "title": "Sample Book 29",
+    "author": "Author 29",
+    "publishedDate": "2023-05-30",
+    "isbn": "2829303132",
+    "location": "456.7891234567JKL | Nonfiction",
+    "shelfLocation": "456.7891234567JKL | Nonfiction"
+  },
+  {
+    "title": "Sample Book 30",
+    "author": "Author 30",
+    "publishedDate": "2023-06-30",
+    "isbn": "2930313233",
+    "location": "ADV | Fiction",
+    "shelfLocation": "ADV | Fiction"
+  }
 ]

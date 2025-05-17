@@ -9,19 +9,16 @@
 <body>
     <%- include('header') %>
     <main>
-        <h1>Issue a Book</h1>
+        <h1>Return a Book</h1>
         <hr>
 
         <article>
-            <h2>Issue Book</h2>
-            <form action="/issue" method="POST">
+            <h2>Return Book</h2>
+            <form action="/return" method="POST">
                 <label for="ISBN">Book ISBN:</label>
                 <input type="text" id="bookId" name="bookId" required>
 
-                <label for="userId">Student ID:</label>
-                <input type="text" id="userId" name="userId" required>
-
-                <button type="submit">Issue Book</button>
+                <button type="submit">Return Book</button>
             </form>
         </article>
     </main>

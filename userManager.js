@@ -7,28 +7,36 @@ const app = express();
 app.use(express.json());
 
 class User {
-    constructor(name, email) {
-        this.id = users.length + 1;
+    constructor(name, email, id = null, books = []) {
+        this.id = id;
         this.name = name;
         this.email = email;
-        this.books = [];
+        this.books = books || [];
     }
 
-    static addBook(book) {
+    static checkIfUserExists(data, type = 'ID') {
+        if (type === 'name') {
+            return users.some(user => user.name === data);
+        } else if (type === 'ID') {
+            return users.some(user => user.id === data);
+        }
+    }
+
+    addBook(book) {
         this.books.push(book);
         statusCode(202);
         console.log(`${chalk.grey(this.name)} borrowed ${chalk.green(book.title)}`);
-        User.pushUsersFromJSON();
+        User.pushUsersToJSON();
     }
 
-    static removeBook(book) {
+    removeBook(book) {
         const index = this.books.indexOf(book);
         if (index > -1) {
             this.books.splice(index, 1);
         }
         statusCode(200);
         console.log(`${chalk.grey(this.name)} returned ${chalk.green(book.title)}`);
-        User.pushUsersFromJSON();
+        User.pushUsersToJSON();
     }
 
     static getUsersFromJSON() {
@@ -36,11 +44,17 @@ class User {
         return JSON.parse(data);
     }
 
-    static pushUsersFromJSON() {
+    static pushUsersToJSON() {
         fs.writeFileSync('users.json', JSON.stringify(users, null, 2), 'utf-8');
     }
 }
 
-const users = User.getUsersFromJSON();
+function getUsersFromJSON() {
+    const data = fs.readFileSync('users.json', 'utf-8');
+    const rawUsers = JSON.parse(data);
+    return rawUsers.map(u => new User(u.name, u.email, u.id, u.books));
+}
+
+const users = getUsersFromJSON();
 
 export { User, users };

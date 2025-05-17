@@ -1,53 +1,77 @@
 [
-    {
-        "id": 1,
-        "name": "John Doe",
-        "email": "4jdoe@hbhs.school.nz",
-        "books": [
-            {
-                "title": "Sample Book 1",
-                "isbn": "1234567890",
-                "dueDate": "2023-12-01"
-            },
-            {
-                "title": "Sample Book 2",
-                "isbn": "0987654321",
-                "dueDate": "2023-12-15"
-            }
-        ]
-    },
-    {
-        "id": 2,
-        "name": "Jane Smith",
-        "email": "2jsmith@hbhs.school.nz",
-        "books": [
-            {
-                "title": "Sample Book 3",
-                "isbn": "1122334455",
-                "dueDate": "2023-11-01"
-            },
-            {
-                "title": "Sample Book 4",
-                "isbn": "2233445566",
-                "dueDate": "2023-11-15"
-            }
-        ]
-    },
-    {
-        "id": 3,
-        "name": "Alice Johnson",
-        "email": "5ajohnst@hbhs.school.nz",
-        "books": [
-            {
-                "title": "Sample Book 5",
-                "isbn": "3344556677",
-                "dueDate": "2023-10-01"
-            },
-            {
-                "title": "Sample Book 6",
-                "isbn": "4455667788",
-                "dueDate": "2023-10-15"
-            }
-        ]
-    }
+  {
+    "id": 1,
+    "name": "John Doe",
+    "email": "4jdoe@hbhs.school.nz",
+    "books": [
+      {
+        "title": "Sample Book 1",
+        "isbn": "1234567890",
+        "dueDate": "2023-12-01"
+      },
+      {
+        "title": "Sample Book 2",
+        "isbn": "0987654321",
+        "dueDate": "2023-12-15"
+      },
+      {
+        "title": "Sample Book 9",
+        "author": "Author 9",
+        "publishedDate": "2023-09-01",
+        "isbn": "7788990011",
+        "location": "BAS | Fiction",
+        "shelfLocation": "BAS | Fiction"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "email": "2jsmith@hbhs.school.nz",
+    "books": [
+      {
+        "title": "Sample Book 3",
+        "isbn": "1122334455",
+        "dueDate": "2023-11-01"
+      },
+      {
+        "title": "Sample Book 4",
+        "isbn": "2233445566",
+        "dueDate": "2023-11-15"
+      },
+      {
+        "title": "Sample Book 9",
+        "author": "Author 9",
+        "publishedDate": "2023-09-01",
+        "isbn": "7788990011",
+        "location": "On Loan",
+        "shelfLocation": "BAS | Fiction"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Alice Johnson",
+    "email": "5ajohnst@hbhs.school.nz",
+    "books": [
+      {
+        "title": "Sample Book 5",
+        "isbn": "3344556677",
+        "dueDate": "2023-10-01"
+      },
+      {
+        "title": "Sample Book 6",
+        "isbn": "4455667788",
+        "dueDate": "2023-10-15"
+      },
+      {
+        "title": "Sample Book 13",
+        "author": "Author 13",
+        "publishedDate": "2023-01-15",
+        "isbn": "1213141516",
+        "location": "KUD | Fiction",
+        "shelfLocation": "KUD | Fiction"
+      }
+    ]
+  }
 ]
