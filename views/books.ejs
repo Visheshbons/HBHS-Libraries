@@ -3,22 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Books | HBHS Libraries</title>
 </head>
 <body>
+    <%- include('header') %>
     <main>
         <h1>All Books</h1>
         <hr>
         <div class="book-list">
-            <% for (i = 0; i < books.length; i++) { %>
+            <% books.forEach(function(book) { %>
                 <article>
-                    <h3><%= books.title %></h3>
-                    <p><strong>Author:</strong> <%= books.author %></p>
-                    <p><strong>Published:</strong> <%= books.publishedDate %></p>
-                    <p><strong>ISBN:</strong> <%= books.isbn %></p>
+                    <h3><%= book.title %></h3>
+                    <p><strong>Author:</strong> <%= book.author %></p>
+                    <p><strong>Published:</strong> <%= book.publishedDate %></p>
+                    <p><strong>ISBN:</strong> <%= book.isbn %></p>
+                    <p><strong>Location:</strong> <%= book.location %></p>
                 </article>
-            <% } %>
+            <% }); %>
         </div>
     </main>
+    <%- include('footer') %>
 </body>
 </html>

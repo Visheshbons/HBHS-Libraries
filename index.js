@@ -1,6 +1,8 @@
 import express from 'express';
 import chalk from 'chalk';
-import { statusCode } from './appConfig.js';
+import { statusCode } from './errors.js';
+import { User, users } from './userManager.js';
+import { Book, books } from './bookManager.js';
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -50,15 +52,8 @@ app.get('/books', (req, res) => {
 });
 
 app.get('/bookDev', (req, res) => {
-    res.render('bookDev.ejs', {
-        books: [
-            {
-                title: 'The Great Gatsby',
-                author: 'F. Scott Fitzgerald',
-                publishedDate: '1925',
-                isbn: '9780743273565',
-            }
-        ]
+    res.render('books.ejs', {
+        books: books
     });
 });
 
