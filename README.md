@@ -27,5 +27,5 @@ nodemon index.js
 
 Enjoy!
 
-&copy; 2025 Vishesh Kudva. All Rights Reserved. \
-Valid as of version `v0.1.0`.
+<small> &copy; 2025 Vishesh Kudva. All Rights Reserved. </small>
+<small> Valid as of version `v0.1.1`. </small>
