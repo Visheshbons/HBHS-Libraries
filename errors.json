@@ -1,0 +1,32 @@
+{
+    "100": "Continuing... (100)",
+    "101": "Switching Protocols... (101)",
+    "102": "Processing... (102)",
+    "103": "Recieving Early Hints... (103)",
+    
+    "200": "OK! (200)",
+    "201": "Created! (201)",
+    "202": "Accepted! (202)",
+    "203": "Returned Non-Athoritive Information! (203)",
+    "204": "Returned No Content! (204)",
+    "205": "Reset Content! (205)",
+    "206": "Returned Partial Content! (206)",
+    
+    "300": "Multiple Choices... (300)",
+    "301": "Page Moved Permanently. (301)",
+    "302": "Page Found! Redirecting... (302)",
+    "303": null,
+    "304": "Not Modified!",
+    "307": "Temporarily Redirected. (307)",
+    "308": "Permanently Redirected. (308)",
+    
+    "400": "Bad Request (400) at ",
+    "401": "Unauthorized Request (401) at ",
+    "403": "Forbidden Request (403) at ",
+    "404": "Page Not Found (404) at ",
+    "405": "Request Method Not Allowed (405) at ",
+    "406": "Path Not Acceptable (406) at ",
+    "408": "Timed Out (408)! Request ID: ",
+    "409": "Conflict Detected (409) at ",
+    "410": "Gone! (410) Request ID: "
+}
